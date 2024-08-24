@@ -10,6 +10,21 @@ This project is a Django-based web application designed to handle user queries t
 - **Success Page:** After successful form submission, users are redirected to a confirmation page.
 - **Responsive Design:** The form is fully responsive, providing a seamless experience across various devices, including desktops, tablets, and mobile phones.
 
+## Screenshots
+Here are some screenshots of the application in action:
+
+- **Form Page:**
+  ![Form Page](./form-page.png)
+  *The initial page where users enter their queries.*
+
+- **Success Page:**
+  ![Success Page](./success-page.png)
+  *The confirmation page displayed after successful form submission.*
+
+- **Error State:**
+  ![Error State](./error-state.png)
+  *Example of an error state showing validation feedback to users.*
+
 ## Challenges Faced
 - **Form Validation:** Ensuring that all fields were correctly validated and that custom error messages were displayed appropriately.
 - **Radio Buttons Handling:** Managing radio buttons, especially hiding the default blank option, required careful CSS manipulation to maintain a clean UI.
