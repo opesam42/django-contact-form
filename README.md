@@ -14,15 +14,15 @@ This project is a Django-based web application designed to handle user queries t
 Here are some screenshots of the application in action:
 
 - **Form Page:**
-  ![Form Page](./form-page.png)
+  ![Form Page](./assets/form-page.png)
   *The initial page where users enter their queries.*
 
 - **Success Page:**
-  ![Success Page](./success-page.png)
+  ![Success Page](./assets/success-page.png)
   *The confirmation page displayed after successful form submission.*
 
 - **Error State:**
-  ![Error State](./error-state.png)
+  ![Error State](./assets/error-state.png)
   *Example of an error state showing validation feedback to users.*
 
 ## Challenges Faced
