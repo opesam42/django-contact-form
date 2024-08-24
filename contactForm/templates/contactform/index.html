@@ -82,8 +82,10 @@
                       </section>
 
                       <section class="confirm-field">
+                        <div>
                         {{ form.agree_terms }}  <span>{{ form.agree_terms.label_tag }}</span></label>
                         {% if form.agree_terms.errors %}
+                        </div>
                             <div class="error">
                                 {% for error in form.agree_terms.errors %}
                                     {{ error }}
