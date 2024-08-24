@@ -66,6 +66,8 @@ Here are some screenshots of the application in action:
 
 6. **Access the Application:** Open your web browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
+## Deployment
+- Working on it.
 ## Author
 - Website - [Gbenga Opeyemi](https://github.com/opesam42)
 - Frontend Mentor - [@opesam42](https://www.frontendmentor.io/profile/opesam42)
