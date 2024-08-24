@@ -51,6 +51,11 @@ This project is a Django-based web application designed to handle user queries t
 
 6. **Access the Application:** Open your web browser and go to [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
+## Author
+- Website - [Gbenga Opeyemi](https://github.com/opesam42)
+- Frontend Mentor - [@opesam42](https://www.frontendmentor.io/profile/opesam42)
+- Twitter - [@gbengaope04](https://www.twitter.com/@gbengaope04)
+- LinkedIn - [Opeyemi Oluwagbemiga](www.linkedin.com/in/opeyemi-oluwagbemiga-2ba61423b)
 
 ## Conclusion
 This project was a valuable learning experience, providing insights into Django's form handling, responsive design, and deployment. The challenges encountered helped solidify understanding and enhanced skills in these areas. The successful completion of this project lays a strong foundation for future web development endeavors.
