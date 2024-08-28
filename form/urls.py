@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from contactForm import views
+from contactform import views
 
 urlpatterns = [
     path('', views.contact_view, name='index'),
