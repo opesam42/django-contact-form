@@ -117,7 +117,7 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT', '3306'),
         'OPTIONS': {
             'ssl': {
-                'ca': MYSQL_CA_CERT,
+                'ca': str(BASE_DIR / 'cert/ca.pem'),
             },
         },
     }
