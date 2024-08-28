@@ -86,8 +86,9 @@ WSGI_APPLICATION = 'form.wsgi.application'
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }  """
-
-MYSQL_CA_CERT = base64.b64decode(os.environ.get('DB_SSL_CA')).decode('utf-8')
+import base64
+# MYSQL_CA_CERT = base64.b64decode(os.environ.get('DB_SSL_CA')).decode('utf-8')
+MYSQL_CA_CERT = base64.b64decode(env('DB_SSL_CA')).decode('utf-8')
 
 DATABASES = {
     'default': {
@@ -100,7 +101,7 @@ DATABASES = {
         "OPTIONS": {
             'ssl': {
                 # 'ca': str(BASE_DIR / 'cert/ca.pem'),
-                'ca': env('DB_SSL_CA'),
+                'ca': env('MYSQL_CA_CERT'),
             }
         },
     }
