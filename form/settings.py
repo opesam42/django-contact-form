@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'form.wsgi.application'
     }
 }  """
 import base64
-# MYSQL_CA_CERT = base64.b64decode(os.environ.get('DB_SSL_CA')).decode('utf-8')
-MYSQL_CA_CERT = base64.b64decode(env('DB_SSL_CA')).decode('utf-8')
+MYSQL_CA_CERT = base64.b64decode(os.environ.get('DB_SSL_CA')).decode('utf-8')
+# MYSQL_CA_CERT = base64.b64decode(env('DB_SSL_CA')).decode('utf-8')
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         "ENGINE":  'django.db.backends.mysql',
         "NAME": env('DB_NAME'),
@@ -103,6 +103,22 @@ DATABASES = {
                 # 'ca': str(BASE_DIR / 'cert/ca.pem'),
                 'ca': env('MYSQL_CA_CERT'),
             }
+        },
+    }
+} """
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
+        'OPTIONS': {
+            'ssl': {
+                'ca': MYSQL_CA_CERT,
+            },
         },
     }
 }
