@@ -87,6 +87,8 @@ WSGI_APPLICATION = 'form.wsgi.application'
     }
 }  """
 
+MYSQL_CA_CERT = base64.b64decode(os.environ.get('DB_SSL_CA')).decode('utf-8')
+
 DATABASES = {
     'default': {
         "ENGINE":  'django.db.backends.mysql',
